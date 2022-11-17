@@ -32,7 +32,7 @@ public class UserService {
         User user = userRequestDto.toEntity();
         if(userRepository.findByName(user.getName()).isEmpty()) {
             user = userRepository.save(user);
-            return userRepository.findById(user.getId()).get().toResponse();
+            return new UserResponseDto(user.getId(),user.getName(),"등록되었습니다.");
         }else {
             log.info(userRepository.findByName(user.getName()).get().toString());
             return new UserResponseDto(user.getId(), user.getName(), "해당 user는 이미 가입되었습니다");
