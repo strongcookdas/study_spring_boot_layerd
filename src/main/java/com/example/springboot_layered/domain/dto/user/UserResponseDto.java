@@ -1,4 +1,4 @@
-package com.example.springboot_layered.domain.dto;
+package com.example.springboot_layered.domain.dto.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

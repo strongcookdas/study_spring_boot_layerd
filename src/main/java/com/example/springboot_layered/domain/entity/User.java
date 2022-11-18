@@ -1,7 +1,6 @@
 package com.example.springboot_layered.domain.entity;
 
-import com.example.springboot_layered.domain.dto.UserRequestDto;
-import com.example.springboot_layered.domain.dto.UserResponseDto;
+import com.example.springboot_layered.domain.dto.user.UserResponseDto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

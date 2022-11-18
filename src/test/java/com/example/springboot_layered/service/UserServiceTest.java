@@ -1,7 +1,7 @@
 package com.example.springboot_layered.service;
 
-import com.example.springboot_layered.domain.dto.UserRequestDto;
-import com.example.springboot_layered.domain.dto.UserResponseDto;
+import com.example.springboot_layered.domain.dto.user.UserRequestDto;
+import com.example.springboot_layered.domain.dto.user.UserResponseDto;
 import com.example.springboot_layered.domain.entity.User;
 import com.example.springboot_layered.repository.UserRepository;
 import org.junit.jupiter.api.BeforeEach;
