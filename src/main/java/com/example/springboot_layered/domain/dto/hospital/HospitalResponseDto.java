@@ -16,7 +16,13 @@ public class HospitalResponseDto {
     private String hospitalName;
     private String businessTypeName;
 
-    public HospitalResponseDto(Integer id, String openServiceName, String phone, String fullAddress, String roadNameAddress, String hospitalName, String businessTypeName) {
+    private Integer healthcareProviderCount;
+    private Integer patientRoomCount;
+    private Integer totalNumberOfBeds;
+    private Float totalAreaSize;
+
+
+    public HospitalResponseDto(Integer id, String openServiceName, String phone, String fullAddress, String roadNameAddress, String hospitalName, String businessTypeName, Integer healthcareProviderCount, Integer patientRoomCount, Integer totalNumberOfBeds, Float totalAreaSize) {
         this.id = id;
         this.openServiceName = openServiceName;
         this.phone = phone;
@@ -24,5 +30,9 @@ public class HospitalResponseDto {
         this.roadNameAddress = roadNameAddress;
         this.hospitalName = hospitalName;
         this.businessTypeName = businessTypeName;
+        this.healthcareProviderCount = healthcareProviderCount;
+        this.patientRoomCount = patientRoomCount;
+        this.totalNumberOfBeds = totalNumberOfBeds;
+        this.totalAreaSize = totalAreaSize;
     }
 }

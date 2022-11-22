@@ -28,7 +28,13 @@ public class Hospital {
     private String hospitalName;
     private String businessTypeName;
 
+    private Integer healthcareProviderCount;
+    private Integer patientRoomCount;
+    private Integer totalNumberOfBeds;
+    private Float totalAreaSize;
+
     public HospitalResponseDto toResponseDto(){
-        return new HospitalResponseDto(this.id,this.openServiceName,this.phone,this.fullAddress,this.roadNameAddress,this.hospitalName,this.businessTypeName);
+        return new HospitalResponseDto(this.id,this.openServiceName,this.phone,this.fullAddress,this.roadNameAddress,
+                this.hospitalName,this.businessTypeName,this.healthcareProviderCount,this.patientRoomCount,this.totalNumberOfBeds,this.totalAreaSize);
     }
 }
